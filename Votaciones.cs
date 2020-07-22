@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp39
+namespace ConsoleApp41
 {
     class Program
     {
@@ -15,7 +15,7 @@ namespace ConsoleApp39
             int blanco;
             int anulados;
             int n;
-            int p;
+            double p;
 
             Console.WriteLine("a: ");
             a = int.Parse(Console.ReadLine());
@@ -28,9 +28,9 @@ namespace ConsoleApp39
             Console.WriteLine("n: ");
             n = int.Parse(Console.ReadLine());
             Console.WriteLine("p: ");
-            p = int.Parse(Console.ReadLine());
+            p = double.Parse(Console.ReadLine());
 
-            int mayoresEdad = (n * p) / 100;
+            int mayoresEdad = (int)(n * (p / 100));
             int votantes = a + b + blanco + anulados;
             int abstencion = mayoresEdad - votantes;
 
